@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack Lobby</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="lobby-header">
+    <h1>Blackjack Lobby</h1>
+    <div class="user-info">
+      <span id="username-display"></span>
+      <span id="chips-display"></span>
+      <button id="logout-btn">Logout</button>
+    </div>
+  </header>
+  
+  <main class="lobby-main">
+    <div class="tables-container">
+      <h2>Available Tables</h2>
+      <div class="tables-grid" id="tables-grid">
+        <!-- Tables will be added dynamically -->
+      </div>
+    </div>
+  </main>
+
+  <script src="js/utils.js"></script>
+  <script src="js/lobby.js"></script>
+</body>
+</html>
