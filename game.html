@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackjack Table</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="game-container">
+    <header class="game-header">
+      <h1>Blackjack</h1>
+      <div class="game-info">
+        <span id="game-username"></span>
+        <span id="game-chips"></span>
+        <button id="leave-table">Leave Table</button>
+      </div>
+    </header>
+    
+    <div class="game-table">
+      <!-- Dealer Area -->
+      <div class="dealer-area">
+        <h2>Dealer</h2>
+        <div class="dealer-cards" id="dealer-cards">
+          <!-- Cards will be added here -->
+        </div>
+        <div class="dealer-total" id="dealer-total"></div>
+      </div>
+      
+      <!-- Player Area -->
+      <div class="player-area">
+        <h2>You</h2>
+        <div class="player-cards" id="player-cards">
+          <!-- Cards will be added here -->
+        </div>
+        <div class="player-total" id="player-total"></div>
+        <div class="player-bet" id="player-bet">Bet: $0</div>
+      </div>
+      
+      <!-- Controls -->
+      <div class="game-controls" id="game-controls">
+        <!-- Controls will be shown/hidden based on game state -->
+      </div>
+      
+      <!-- Game Messages -->
+      <div class="game-message" id="game-message"></div>
+    </div>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
